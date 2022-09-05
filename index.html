@@ -23,7 +23,51 @@
 
 <header></header>
 
-	<div class="settings-container">
+	<div class="modal-window hide">
+
+		<div class="modal-container">
+
+			<div class="modal-wrapper">
+
+				<a href="#" class="icon close">
+					<img src="images/dist/close.svg" alt="">
+				</a>
+
+				<p class="center-text">На телефон +7-ХХХ-ХХХ-ХХ выслано подтверждение с кодом</p>
+
+				<input placeholder="Код для подтверждения" class="mt-30" type="text">
+				
+				<div class="btn-row mt-30">
+					<a href="" class="btn-red">Отмена</a>
+					<a href="" class="btn-yelow">Подтвердить</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="modal-window img-modal-window hide">
+		<div class="modal-container">
+
+			<div class="modal-img-wrapper">
+
+				<a class="icon close">
+					<img src="images/dist/close.svg" alt="">
+				</a>
+
+				<div class="img-container">
+					<img src="images/dist/photo1.png" alt="">
+				</div>
+				
+
+			</div>
+
+		</div>
+	</div>
+
+	<main class="settings-container">
 
 		<div class="settings-top-block">
 
@@ -159,7 +203,7 @@
 
 			<div class="contact-info-content">
 
-				<div class="column-lable">
+				<div class="column-lable mt-8">
 					<span>Телефоны</span>
 				</div>
 
@@ -173,7 +217,12 @@
 							<p class="red-text mt-10">Не верный формат</p>
 						</div>
 						<div class="item-row">
-							<a href="#" class="chenge-phone">Изменить</a>
+							<a class="chenge-phone">Изменить</a>
+
+							<div class="phone-chenge-error-popup hide">
+								<img class="icon" src="images/dist/stop.png" alt="">
+								<p>Нельзя повторно добавлять уже привязанный номер телефона</p>
+							</div>
 						</div>
 					</div>
 
@@ -258,7 +307,7 @@
 								<img class="circle-img" src="images/dist/photo1.png" alt="">
 
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -451,7 +500,7 @@
 								<img class="img-square" class="" src="images/dist/photo1.png" alt="">
 
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -621,7 +670,7 @@
 									<img src="images/dist/photo2.png" alt="">
 								</div>
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -635,7 +684,7 @@
 									<img src="images/dist/photo2.png" alt="">
 								</div>
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -649,7 +698,7 @@
 									<img src="images/dist/photo2.png" alt="">
 								</div>
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -663,7 +712,7 @@
 									<img src="images/dist/photo2.png" alt="">
 								</div>
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -677,7 +726,7 @@
 									<img src="images/dist/photo2.png" alt="">
 								</div>
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -707,7 +756,7 @@
 								</div>
 								
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -723,11 +772,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -736,11 +785,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -749,11 +798,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -762,11 +811,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -775,11 +824,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -788,11 +837,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -801,11 +850,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -814,11 +863,11 @@
 							<div class="video-company-item">
 								<a class="video-company img-container" href="#">
 									<img src="images/dist/photo2.png" alt="">
-									<img class="video-icon" src="images/dist/Многоугольник 1.png" alt="">
+									
 								</a>
 	
 								<div class="action-container">
-									<a class="icon" href="#"><img src="images/dist/expand-arrows.png" alt=""></a>
+									<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
 									<a class="icon" href="#"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 								</div>
@@ -1194,7 +1243,7 @@
 		</div>
 
 
-	</div>
+	</main>
 
 	<script src="js/app.min.js"></script>
 
