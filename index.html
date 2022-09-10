@@ -48,6 +48,122 @@
 
 	</div>
 
+	<div class="modal-window confirm-phone hide" data-id="">
+
+		<div class="modal-container">
+
+			<div class="modal-wrapper">
+
+				<a href="#" class="icon close">
+					<img src="images/dist/close.svg" alt="">
+				</a>
+
+				<p class="center-text">На телефон +7-ХХХ-ХХХ-ХХ выслано подтверждение с кодом</p>
+				
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod1" type="text">
+					<label for="cod1" class="placeholder">Регион/населеный пункт</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod2" type="text">
+					<label for="cod2" class="placeholder">Улица</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod3" type="text">
+					<label for="cod3" class="placeholder">Дом</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod4" type="text">
+					<label for="cod4" class="placeholder">Корпус/строение</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod5" type="text">
+					<label for="cod5" class="placeholder">Номер помещения</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod6" type="text">
+					<label for="cod6" class="placeholder">Район</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod7" type="text">
+					<label for="cod7" class="placeholder">Индекс</label>
+				</div>
+				
+				<div class="btn-row mt-30">
+					<a href="" class="btn-red">Отмена</a>
+					<a href="" class="btn-yelow-no-hover">Подтвердить</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="modal-window" data-id="">
+
+		<div class="modal-container">
+
+			<div class="modal-wrapper">
+
+				<a href="#" class="icon close">
+					<img src="images/dist/close.svg" alt="">
+				</a>
+
+				<p class="center-text">Почтовый адрес</p>
+				
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod8" type="text">
+					<label for="cod8" class="placeholder">Регион/населеный пункт</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod9" type="text">
+					<label for="cod9" class="placeholder">Улица</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod10" type="text">
+					<label for="cod10" class="placeholder">Дом</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod11" type="text">
+					<label for="cod11" class="placeholder">Корпус/строение</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod12" type="text">
+					<label for="cod12" class="placeholder">Номер помещения</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod13" type="text">
+					<label for="cod13" class="placeholder">Район</label>
+				</div>
+
+				<div class="input-wrapper mt-15">
+					<input class="custom-input" id="cod14" type="text">
+					<label for="cod14" class="placeholder">Индекс</label>
+				</div>
+				
+				<div class="btn-row mt-30">
+					<a href="" class="btn-red">Отмена</a>
+					<a href="" class="btn-yelow-no-hover">Подтвердить</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
 	<div class="modal-window delete-phone hide">
 
 		<div class="modal-container">
@@ -94,7 +210,7 @@
 
 	</div>
 
-	<div class="img-modal-window hide">
+	<div class="modal-window img-modal-window hide">
 		<div class="modal-container">
 
 			<div class="modal-img-wrapper">
@@ -206,9 +322,10 @@
 						<div class="content-row">
 							<div class="item-row">
 								<p class="error-message-top">
-									<span>очень_длинный_пример@mail.ru</span>
+									<span class="error-message-top-content">очень_длинный_пример@mail.ru</span>
 									<a class="delete icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
+										<span class="prompt">Eдалить Email?</span>
 									</a>
 								</p>
 								<div class="input-wrapper">
@@ -232,6 +349,7 @@
 									<span class="email">пример@mail.ru</span>
 									<a class="edit-email icon">
 										<img src="images/dist/pencil-edit-button копия 6.png" alt="">
+										<span class="prompt">Редактировать Email?</span>
 									</a>
 									<a class="delete-email icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
@@ -369,7 +487,7 @@
 
 				<h4 class="contact-info-title">Контактная информация</h4>
 
-				<form action="">
+				<form id="main-form">
 
 					<div class="contact-info-wrapper">
 
@@ -416,7 +534,7 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" id="full-name" type="text">
+										<input class="custom-input" name="full_name" id="full-name" type="text">
 										<label for="full-name" class="placeholder">Фамилия Имя Отчество</label>
 									</div>
 								</div>
@@ -428,7 +546,7 @@
 								</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input id="beath-day" type="date">
+										<input class="input-date" id="beath-day" type="date" placeholder="data">
 									</div>
 								</div>
 							</div>
@@ -440,10 +558,13 @@
 									<div class="select-wrapper">
 										<a class="select select-active"><span>Среднее специальное</span><svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg></a>
 										<ul class="select-list hide">
-											<li><span></span><a>Высшие</a></li>
+											<li><span></span><a>Высшее</a></li>
 											<li class="active"><span></span><a>Среднее специальное</a></li>
 											<li><span></span><a>Средние</a></li>
 										</ul>
+										<select hidden name="" id="">
+											<option></option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -581,7 +702,8 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
 								</div>
 								<div class="text-area-wrapper">
-									<textarea type="text" class="mt-8" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about" id=""></textarea>
+									<textarea class="text-area" type="text" class="mt-8" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about" id="about"></textarea>
+									<p class="textarea-error-message hide">Заполните поле не менее чем на 250 символов</p>
 								</div>
 							</div>
 
@@ -619,7 +741,7 @@
 			
 						<div class="right-block">
 			
-							<p>Фотография к резюме</p>
+							<p>Логотип</p>
 
 							<p class="muddy-text mt-20">Не более 5 изображений</p>
 
@@ -740,8 +862,7 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="company-create-date" value="25.04.2019">
-										<label for="company-create-date" class="placeholder">Дата регистрации компании</label>
+										<input class="input-date" type="date" id="company-create-date">
 									</div>
 								</div>
 							</div>
@@ -752,7 +873,7 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="company-headcount" value="100">
+										<input class="custom-input" type="number" id="company-headcount" value="100">
 										<label for="company-headcount" class="placeholder">Численность компании</label>
 									</div>
 								</div>
@@ -788,8 +909,8 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
 								</div>
 								<div class="text-area-wrapper">
-									<textarea type="text" class="mt-8 error-active" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about" id=""></textarea>
-									<p class="textarea-error-message">Заполните поле не менее чем на 250 символов</p>
+									<textarea class="text-area" type="text" class="mt-8" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about-company" id="about-company"></textarea>
+									<p class="textarea-error-message hide">Заполните поле не менее чем на 250 символов</p>
 								</div>
 							</div>
 
@@ -1050,7 +1171,7 @@
 					</div>
 
 					<div class="align-center-wrapper mt-20">
-						<a href="#" class="btn-yelow">Сохранить</a>
+						<button value="value" class="btn-yelow" id="save-settings">Сохранить</button>
 					</div>
 					
 				</form>
@@ -1389,7 +1510,7 @@
 								</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input type="password" name="new-password" id="new-password">
+										<input type="password" name="confirm-new-password" id="confirm-new-password">
 									</div>
 									
 									<p class="red-text">Пароль не совпадает</p>
