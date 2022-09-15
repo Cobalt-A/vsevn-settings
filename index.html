@@ -23,7 +23,36 @@
 
 <header></header>
 
-	<div class="modal-window confirm-phone hide" data-id="">
+	<div class="modal-window hide" id="date">
+
+		<div class="modal-container">
+
+			<div class="modal-wrapper">
+
+				<a href="#" class="icon close">
+					<img src="images/dist/close.svg" alt="">
+				</a>
+
+				<p class="center-text">Выберите дату рождения</p>
+
+				<div class="row-space-between mt-30">
+					<input id="day" placeholder="Код для подтверждения" type="text">
+					<input disabled id="month" placeholder="Код для подтверждения" type="text">
+					<input id="year" placeholder="Код для подтверждения" type="text">
+				</div>
+				
+				<div class="btn-row mt-30">
+					<a href="" class="btn-red">Отмена</a>
+					<a href="" class="btn-yelow-no-hover">Подтвердить</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="modal-window confirm-phone hide" id="confirm-phone">
 
 		<div class="modal-container">
 
@@ -48,75 +77,17 @@
 
 	</div>
 
-	<div class="modal-window confirm-phone hide" data-id="">
+	<div class="modal-window hide" id="address-window">
 
 		<div class="modal-container">
 
-			<div class="modal-wrapper">
+			<form class="modal-wrapper">
 
 				<a href="#" class="icon close">
 					<img src="images/dist/close.svg" alt="">
 				</a>
 
-				<p class="center-text">На телефон +7-ХХХ-ХХХ-ХХ выслано подтверждение с кодом</p>
-				
-				<div class="input-wrapper mt-15">
-					<input class="custom-input" id="cod1" type="text">
-					<label for="cod1" class="placeholder">Регион/населеный пункт</label>
-				</div>
-
-				<div class="input-wrapper mt-15">
-					<input class="custom-input" id="cod2" type="text">
-					<label for="cod2" class="placeholder">Улица</label>
-				</div>
-
-				<div class="input-wrapper mt-15">
-					<input class="custom-input" id="cod3" type="text">
-					<label for="cod3" class="placeholder">Дом</label>
-				</div>
-
-				<div class="input-wrapper mt-15">
-					<input class="custom-input" id="cod4" type="text">
-					<label for="cod4" class="placeholder">Корпус/строение</label>
-				</div>
-
-				<div class="input-wrapper mt-15">
-					<input class="custom-input" id="cod5" type="text">
-					<label for="cod5" class="placeholder">Номер помещения</label>
-				</div>
-
-				<div class="input-wrapper mt-15">
-					<input class="custom-input" id="cod6" type="text">
-					<label for="cod6" class="placeholder">Район</label>
-				</div>
-
-				<div class="input-wrapper mt-15">
-					<input class="custom-input" id="cod7" type="text">
-					<label for="cod7" class="placeholder">Индекс</label>
-				</div>
-				
-				<div class="btn-row mt-30">
-					<a href="" class="btn-red">Отмена</a>
-					<a href="" class="btn-yelow-no-hover">Подтвердить</a>
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<div class="modal-window" data-id="">
-
-		<div class="modal-container">
-
-			<div class="modal-wrapper">
-
-				<a href="#" class="icon close">
-					<img src="images/dist/close.svg" alt="">
-				</a>
-
-				<p class="center-text">Почтовый адрес</p>
+				<p class="center-text">Адрес</p>
 				
 				<div class="input-wrapper mt-15">
 					<input class="custom-input" id="cod8" type="text">
@@ -158,13 +129,13 @@
 					<a href="" class="btn-yelow-no-hover">Подтвердить</a>
 				</div>
 
-			</div>
+			</form>
 
 		</div>
 
 	</div>
 
-	<div class="modal-window delete-phone hide">
+	<div class="modal-window delete-phone hide" id="delete-phone">
 
 		<div class="modal-container">
 
@@ -187,7 +158,7 @@
 
 	</div>
 
-	<div class="modal-window delete-email-window hide">
+	<div class="modal-window delete-email-window hide" id="delete-email-window">
 
 		<div class="modal-container">
 
@@ -210,7 +181,7 @@
 
 	</div>
 
-	<div class="modal-window img-modal-window hide">
+	<div class="modal-window img-modal-window hide" id="img-modal-window">
 		<div class="modal-container">
 
 			<div class="modal-img-wrapper">
@@ -325,7 +296,7 @@
 									<span class="error-message-top-content">очень_длинный_пример@mail.ru</span>
 									<a class="delete icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
-										<span class="prompt">Eдалить Email?</span>
+										<span class="prompt">Удалить Email?</span>
 									</a>
 								</p>
 								<div class="input-wrapper">
@@ -353,6 +324,7 @@
 									</a>
 									<a class="delete-email icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
+										<span class="prompt">Удалить Email?</span>
 									</a>
 								</p>
 							</div>
@@ -370,9 +342,11 @@
 									<span class="email">пример@mail.ru</span>
 									<a class="edit-email icon">
 										<img src="images/dist/pencil-edit-button копия 6.png" alt="">
+										<span class="prompt">Редактировать Email?</span>
 									</a>
 									<a class="delete-email icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
+										<span class="prompt">Удалить Email?</span>
 									</a>
 								</p>
 							</div>
@@ -401,7 +375,7 @@
 							<div class="item-row">
 								<div class="input-wrapper">
 									<form action="">
-										<input id="phone" type="text" placeholder="Телефон" value="очень_длинный_пример@mail.ru">
+										<input data-phone-pattern id="phone" type="text" placeholder="Телефон" value="очень_длинный_пример@mail.ru">
 									</form>
 								</div>
 								<p class="red-text mt-10 hide">Не верный формат</p>
@@ -422,6 +396,7 @@
 									<span class="telephone">+7 952 777 - 00 - 01</span>
 									<a class="edit-telephone icon">
 										<img src="images/dist/pencil-edit-button копия 6.png" alt="">
+										<span class="prompt">Редактировать?</span>
 									</a>
 									<a class="delete-telephone icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
@@ -442,6 +417,7 @@
 									<span class="telephone">+7 952 777 - 00 - 01</span>
 									<a class="edit-telephone icon">
 										<img src="images/dist/pencil-edit-button копия 6.png" alt="">
+										<span class="prompt">Редактировать?</span>
 									</a>
 									<a class="delete-telephone icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
@@ -461,6 +437,7 @@
 									<span class="telephone">+7 952 777 - 00 - 01</span>
 									<a class="edit-telephone icon" class="icon">
 										<img src="images/dist/pencil-edit-button копия 6.png" alt="">
+										<span class="prompt">Редактировать?</span>
 									</a>
 									<a class="delete-telephone icon" href="#" class="icon">
 										<img src="images/dist/Forma 1 копия 15.png" alt="">
@@ -495,30 +472,25 @@
 
 							<p>Фотография к резюме</p>
 
-							<p class="muddy-text mt-20">Не более 5 изображений</p>
-
 							<a href="#" class="btn-yelow mt-8">Добавить фото</a>
 
 							<div class="images-wrapper">
 
-								<div class="photos-container">
-									<div class="circle-img-item"><img src="images/dist/photo1.png" alt=""></div>
-									<div class="circle-img-item"><img src="images/dist/photo1.png" alt=""></div>
-									<div class="circle-img-item"><img src="images/dist/photo1.png" alt=""></div>
-									<div class="circle-img-item"><img src="images/dist/photo1.png" alt=""></div>
+								<div class="photo-container">
 									<div class="circle-img-item"><img src="images/dist/photo1.png" alt=""></div>
 								</div>
 
 								<div class="main-photo-container">
 									<div class="circle-img-main">
-
-										<img class="circle-img" src="images/dist/photo1.png" alt="">
-
-										<div class="action-container">
-											<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
-											<a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
-											<a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
-										</div>
+	
+										<img class="circle-img expended-img" src="images/dist/photo1.png" alt="">
+	
+									</div>
+	
+									<div class="action-container">
+										<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+										<a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+										<a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
 									</div>
 								</div>
 
@@ -534,7 +506,7 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" name="full_name" id="full-name" type="text">
+										<input data-name-pattern class="custom-input" name="full_name" id="full-name" type="text">
 										<label for="full-name" class="placeholder">Фамилия Имя Отчество</label>
 									</div>
 								</div>
@@ -546,7 +518,9 @@
 								</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="input-date" id="beath-day" type="date" placeholder="data">
+										<input disabled class="custom-input" name="full_name" id="beath-day" type="text">
+										<label for="beath-day" class="placeholder">Дата рождения</label>
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM192 304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208C199.2 256 192 263.2 192 272V304zM336 256C327.2 256 320 263.2 320 272V304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336zM64 432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80C71.16 384 64 391.2 64 400V432zM208 384C199.2 384 192 391.2 192 400V432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208zM320 432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336C327.2 384 320 391.2 320 400V432z"/></svg>
 									</div>
 								</div>
 							</div>
@@ -556,7 +530,9 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="select-wrapper">
-										<a class="select select-active"><span>Среднее специальное</span><svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg></a>
+										<input disabled class="custom-input select-input" value="Среднее" name="select-education" id="select-education" type="text">
+										<label for="select-education" class="placeholder">Образование</label>
+										<svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
 										<ul class="select-list hide">
 											<li><span></span><a>Высшее</a></li>
 											<li class="active"><span></span><a>Среднее специальное</a></li>
@@ -574,7 +550,9 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="select-wrapper">
-										<a class="select"><span>Семейное положение</span><svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg></a>
+										<input disabled class="custom-input select-input" name="select-family-status" id="select-family-status" type="text">
+										<label for="select-family-status" class="placeholder">Семейное положение</label>
+										<svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
 										<ul class="select-list hide">
 											<li><span></span><a>Замужем</a></li>
 											<li><span></span><a>В разводе</a></li>
@@ -583,29 +561,35 @@
 									</div>
 								</div>
 							</div>
-							<div class="column-wrapper">
-								<p>Знание языка (ов) <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></p>
+							<div class="column-wrapper mt-10">
+								<div class="text-lable">
+									<span>Знание языка (ов)</span>
+									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
+								</div>
 								<p class="muddy-text pt-20">Ваши знания языков:</p>
 								<p class="muddy-text pt-15">Английский -  Свободное владение</p>
 							</div>
 
 							<hr>
 
-							<div class="wokr-exp-wrapper">
+							<div class="work-exp-wrapper">
 
-								<span>Место работы ( должность, перечень работ ) <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon"><img class="icon" src="images/dist/Forma 1 копия 15.png" alt=""></a></span>
+								<div class="text-lable">
+									<span>Место работы ( должность, перечень работ )</span>
+									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
+								</div>
 
-								<div class="wokr-exp-row pt-15">
+								<div class="work-exp-row pt-15">
 
-									<div class="wokr-exp-col-4">
+									<div class="work-exp-col">
 										<p class="red-text">Менеджер по прадажам сантехники</p>
 									</div>
 
-									<div class="wokr-exp-col-4">
+									<div class="work-exp-col">
 										<p class="green-text">ООО “Все Вакансии Нижнего Новгорода” </p>
 									</div>
 
-									<div class="wokr-exp-col-4">
+									<div class="work-exp-col">
 										<p class="black-text">4 года 8 месяцев 12.2018-3.2019</p>
 									</div>
 
@@ -620,21 +604,24 @@
 
 							</div>
 
-							<div class="wokr-exp-wrapper">
+							<div class="work-exp-wrapper">
 
-								<span>Место работы ( должность, перечень работ ) <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></span>
+								<div class="text-lable">
+									<span>Место работы ( должность, перечень работ )</span>
+									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
+								</div>
 
-								<div class="wokr-exp-row pt-15">
+								<div class="work-exp-row pt-15">
 
-									<div class="wokr-exp-col-4">
+									<div class="work-exp-col">
 										<p class="red-text">Менеджер по прадажам сантехники</p>
 									</div>
 
-									<div class="wokr-exp-col-4">
+									<div class="work-exp-col">
 										<p class="green-text">ООО “Все Вакансии Нижнего Новгорода” </p>
 									</div>
 
-									<div class="wokr-exp-col-4">
+									<div class="work-exp-col">
 										<p class="black-text">4 года 8 месяцев 12.2018-3.2019</p>
 									</div>
 
@@ -667,7 +654,7 @@
 								</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="user-phone" value="+7 831 417-90-00">
+										<input data-phone-pattern class="custom-input" type="text" id="user-phone" value="+7 831 417-90-00">
 										<label for="user-phone" class="placeholder">Телефон</label>
 									</div>
 								</div>
@@ -679,8 +666,8 @@
 								</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="user-adress" value="603022, область Нижгородская, Нижний Новогород, проспекнт  гага">
-										<label for="user-adress" class="placeholder">Адрес проживания</label>
+										<input disabled class="custom-input" type="text" id="user-address" value="603022, область Нижгородская, Нижний Новогород, проспекнт  гага">
+										<label for="user-address" class="placeholder">Адрес проживания</label>
 									</div>
 								</div>
 							</div>
@@ -690,19 +677,25 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
 								</div>	
 								<div class="right-item">
-									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="user-citizenship" value="Россия">
+									<div class="select-wrapper">
+										<input disabled class="custom-input select-input" name="user-citizenship" id="user-citizenship" type="text">
 										<label for="user-citizenship" class="placeholder">Гражданство</label>
+										<svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+										<ul class="select-list hide">
+											<li><span></span><a>Селект1</a></li>
+											<li><span></span><a>Селект2</a></li>
+											<li><span></span><a>Селект3</a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
-							<div class="column-wrapper">
+							<div class="column-wrapper mt-10">
 								<div class="text-lable">
 									<p class="brown-text">О себе в т.ч. поле ключевые навыки</p>
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
 								</div>
-								<div class="text-area-wrapper">
-									<textarea class="text-area" type="text" class="mt-8" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about" id="about"></textarea>
+								<div class="textarea-wrapper">
+									<textarea class="textarea mt-8" type="text" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about" id="about"></textarea>
 									<p class="textarea-error-message hide">Заполните поле не менее чем на 250 символов</p>
 								</div>
 							</div>
@@ -743,31 +736,25 @@
 			
 							<p>Логотип</p>
 
-							<p class="muddy-text mt-20">Не более 5 изображений</p>
-
 							<a href="#" class="btn-yelow mt-8">Добавить фото</a>
 
 							<div class="images-wrapper">
 
-								<div class="photos-container">
-									<div class="item-img-square"><img src="images/dist/photo1.png" alt=""></div>
-									<div class="item-img-square"><img src="images/dist/photo1.png" alt=""></div>
-									<div class="item-img-square"><img src="images/dist/photo1.png" alt=""></div>
-									<div class="item-img-square"><img src="images/dist/photo1.png" alt=""></div>
+								<div class="photo-container">
 									<div class="item-img-square"><img src="images/dist/photo1.png" alt=""></div>
 								</div>
 
 								<div class="main-photo-container">
 									<div class="img-square-main">
-										<img class="img-square" class="" src="images/dist/photo1.png" alt="">
-
-										<div class="action-container">
-											<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
-											<a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
-											<a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
-										</div>
+										<img class="img-square expended-img" class="" src="images/dist/photo1.png" alt="">
 									</div>
-
+	
+									<div class="action-container">
+										<a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+										<a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+										<a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+									</div>
+	
 								</div>
 
 							</div>
@@ -782,9 +769,15 @@
 									<span>Организационно-правовая форма — Юридическая форма</span>
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
-									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="company-form" value="ООО">
-										<label for="company-form" class="placeholder">Организационно-правовая форма — Юридическая форма</label>
+									<div class="select-wrapper">
+										<input disabled class="custom-input select-input" name="opf" id="opf" type="text">
+										<label for="opf" class="placeholder">Юридическая форма</label>
+										<svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+										<ul class="select-list hide">
+											<li><span></span><a>ООО</a></li>
+											<li><span></span><a>ААА</a></li>
+											<li><span></span><a>Селект 3</a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -796,6 +789,7 @@
 									<div class="input-wrapper">
 										<input class="custom-input" type="text" id="company-name">
 										<label for="company-name" class="placeholder">Компания и ее название</label>
+										<a class="prompt auto-fill"><span class="prompt-item"></span></a>
 									</div>
 								</div>
 							</div>
@@ -807,6 +801,7 @@
 									<div class="input-wrapper">
 										<input class="custom-input" type="text" id="inn" value="5464426472">
 										<label for="inn" class="placeholder">ИНН</label>
+										<a class="prompt auto-fill"><span class="prompt-item"></span></a>
 									</div>
 								</div>
 							</div>
@@ -818,17 +813,19 @@
 									<div class="input-wrapper">
 										<input class="custom-input" type="text" id="kpp" value="5464426472">
 										<label for="kpp" class="placeholder">КПП</label>
+										<a class="prompt auto-fill"><span class="prompt-item"></span></a>
 									</div>
 								</div>
 							</div>
 							<div class="row-space-between">
 								<div class="left-item">
 									<span>Юридический адрес</span>
-									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
+									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
+								</div>
 								<div class="right-item">
-									<div class="text-area-wrapper">
-										<textarea class="custom-input" name="" id="am2">603022, область Нижгородская, Нижний Новогород, проспекнт гагар</textarea>
-										<label for="am2" class="placeholder">Юридический адрес</label>
+									<div class="input-wrapper">
+										<input class="custom-input" id="address" value="603022, область Нижгородская, Нижний Новогород, проспекнт гагар" type="text">
+										<label for="address" class="placeholder">Юридический адрес</label>
 									</div>
 								</div>
 							</div>
@@ -838,7 +835,7 @@
 
 							<div class="check-box-wrapper mt-10">
 								<div class="align-center-wrapper">
-									<input class="checkbox" id="chek" type="checkbox" checked>
+									<input class="checkbox" id="chek" type="checkbox">
 									<label class="label-checkbox" for="chek"></label>
 								</div>
 								<span>Совпадает с юридическим адресом</span>
@@ -849,9 +846,9 @@
 									<span>Почтовый адрес</span>
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
-									<div class="text-area-wrapper">
-										<textarea class="custom-input" id="company-mail-adress">603022, область Нижгородская, Нижний Новогород, проспекнт гагар</textarea>
-										<label for="company-mail-adress" class="placeholder">Почтовый адрес</label>
+									<div class="input-wrapper">
+										<input disabled class="custom-input" id="company-mail-address" type="text">
+										<label for="company-mail-address" class="placeholder">Почтовый адрес</label>
 									</div>
 								</div>
 							</div>
@@ -862,7 +859,9 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="input-date" type="date" id="company-create-date">
+										<input disabled class="custom-input" id="company-create-date" type="text">
+										<label for="company-create-date" class="placeholder">Дата создания компании</label>
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM192 304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208C199.2 256 192 263.2 192 272V304zM336 256C327.2 256 320 263.2 320 272V304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336zM64 432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80C71.16 384 64 391.2 64 400V432zM208 384C199.2 384 192 391.2 192 400V432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208zM320 432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336C327.2 384 320 391.2 320 400V432z"/></svg>
 									</div>
 								</div>
 							</div>
@@ -872,9 +871,15 @@
 									<span>Численность компании</span>
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
-									<div class="input-wrapper">
-										<input class="custom-input" type="number" id="company-headcount" value="100">
+									<div class="select-wrapper">
+										<input disabled class="custom-input select-input" name="number" id="company-headcount" type="text">
 										<label for="company-headcount" class="placeholder">Численность компании</label>
+										<svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+										<ul class="select-list hide">
+											<li><span></span><a>Селект 1</a></li>
+											<li><span></span><a>Селект 2</a></li>
+											<li><span></span><a>Селект 3</a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -885,7 +890,7 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>						</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="company-phone" value="+7 831 417-90-00">
+										<input data-phone-pattern class="custom-input" type="text" id="company-phone" value="+7 831 417-90-00">
 										<label for="company-phone" class="placeholder">Телефон</label>
 									</div>
 								</div>
@@ -903,13 +908,13 @@
 								</div>
 							</div>
 
-							<div class="column-wrapper">
-								<div class="text-label">
+							<div class="column-wrapper mt-10">
+								<div class="text-lable">
 									<span class="brown-text">Описание компании</span>
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-textarea"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
 								</div>
-								<div class="text-area-wrapper">
-									<textarea class="text-area" type="text" class="mt-8" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about-company" id="about-company"></textarea>
+								<div class="textarea-wrapper">
+									<textarea class="textarea mt-8" type="text" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about-company" id="about-company"></textarea>
 									<p class="textarea-error-message hide">Заполните поле не менее чем на 250 символов</p>
 								</div>
 							</div>
@@ -920,9 +925,15 @@
 									<div class="action-label-container"><a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a> <a class="icon clean-input"><img src="images/dist/waste-bin копия 26.png" alt=""></a></div>
 								</div>
 								<div class="right-item">
-									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="activity">
+									<div class="select-wrapper">
+										<input disabled class="custom-input select-input" name="activity" id="activity" type="text">
 										<label for="activity" class="placeholder">Сфера деительности</label>
+										<svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+										<ul class="select-list hide">
+											<li><span></span><a>Селект 1</a></li>
+											<li><span></span><a>Селект 2</a></li>
+											<li><span></span><a>Селект 3</a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -947,7 +958,7 @@
 								</div>
 								<div class="right-item">
 									<div class="input-wrapper">
-										<input class="custom-input" type="text" id="hr-phone" placeholder="Телефон" value="+7 831 417-90-00">
+										<input data-phone-pattern class="custom-input" type="text" id="hr-phone" placeholder="Телефон" value="+7 831 417-90-00">
 										<label for="hr-phone" class="placeholder">Телефон ответственного за подбор персонала</label>
 									</div>
 								</div>
@@ -973,56 +984,41 @@
 								<div class="photo-select-wrapper">
 
 									<div class="photo-select-item">
-										<div class="active img-container">
+										<div class="img-container">
 											<img src="images/dist/photo2.png" alt="">
 										</div>
-
-										<input checked name="img" class="radio-button" id="img-1" type="radio">
-										<label class="radio-button-label mt-20" for="img-1"></label>
 									</div>
-
+	
 									<div class="photo-select-item">
 										<div class="img-container">
 											<img src="images/dist/photo2.png" alt="">
 										</div>
-
-										<input name="img" class="radio-button" id="img-2" type="radio">
-										<label class="radio-button-label mt-20" for="img-2"></label>
 									</div>
-
+	
 									<div class="photo-select-item">
 										<div class="img-container">
 											<img src="images/dist/photo2.png" alt="">
 										</div>
-
-										<input name="img" class="radio-button" id="img-3" type="radio">
-										<label class="radio-button-label mt-20" for="img-3"></label>
 									</div>
-
+	
 									<div class="photo-select-item">
 										<div class="img-container">
 											<img src="images/dist/photo2.png" alt="">
 										</div>
-
-										<input name="img" class="radio-button" id="img-4" type="radio">
-										<label class="radio-button-label mt-20" for="img-4"></label>
 									</div>
-
+	
 									<div class="photo-select-item">
 										<div class="img-container">
 											<img src="images/dist/photo2.png" alt="">
 										</div>
-
-										<input name="img" class="radio-button" id="img-5" type="radio">
-										<label class="radio-button-label mt-20" for="img-5"></label>
 									</div>
-
+	
 								</div>
 
 								<p class="mt-10 center-text">Выберите главное изображение для превью</p>
 
 								<div class="upload-wrapper mt-20">
-									<a href="#" class="upload-company-photo">
+									<a href="#" class="upload-company-media">
 										<img src="images/dist/add.png" alt="">
 									</a>
 								</div>
@@ -1155,7 +1151,7 @@
 									</div>
 
 									<div class="upload-wrapper mt-20">
-										<a href="#" class="upload-company-photo">
+										<a href="#" class="upload-company-media">
 											<img src="images/dist/add.png" alt="">
 										</a>
 									</div>
@@ -1178,356 +1174,355 @@
 
 				<hr>
 
-				<form action="">
 
-					<div class="solial-block">
+				<div class="solial-block">
 
-						<p class="title">Социальные сети</p>
+					<p class="title">Социальные сети</p>
 
-						<p class="mt-8">Заходите на сайт через аккаунты в социальных сетях</p>
+					<p class="mt-8">Заходите на сайт через аккаунты в социальных сетях</p>
 
-						<div class="socials-wrapper">
+					<div class="socials-wrapper">
 
-							<div class="solial-item">
+						<div class="solial-item">
 
-								<div class="line-content">
-									<img class="icon" src="images/dist/vk.png" alt="">
-									<p>Вконтакте</p>
+							<div class="line-content">
+								<img class="icon" src="images/dist/vk.png" alt="">
+								<p>Вконтакте</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="vk-y" name="vk" type="radio">
+									<label class="radio-button-label" for="vk-y"></label>
+									<p>Да</p>
 								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="vk-n" name="vk" type="radio">
+									<label class="radio-button-label" for="vk-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
+						</div>
 
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="vk-y" name="vk" type="radio">
-										<label class="radio-button-label" for="vk-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="vk-n" name="vk" type="radio">
-										<label class="radio-button-label" for="vk-n"></label>
-										<p>Нет</p>
-									</div>
+						<div class="solial-item">
+
+							<div class="line-content">
+								<img class="icon" src="images/dist/Facebook-v-Ukraine.png" alt="">
+								<p>Facebook</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="fb-y" name="fb" type="radio">
+									<label class="radio-button-label" for="fb-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input class="radio-button" id="fb-n" name="fb" type="radio">
+									<label class="radio-button-label" for="fb-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="solial-item">
+
+							<div class="line-content">
+								<img class="icon" src="images/dist/unnamed.png" alt="">
+								<p>Одноклассники</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="od-y" name="od" type="radio">
+									<label class="radio-button-label" for="od-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="od-n" name="od" type="radio">
+									<label class="radio-button-label" for="od-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="solial-item">
+
+							<div class="line-content">
+								<img class="icon" src="images/dist/2000px-Google_Plus_logo_2015.svg_.png" alt="">
+								<p>Google +</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="google-y" name="google" type="radio">
+									<label class="radio-button-label" for="google-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="google-n" name="google" type="radio">
+									<label class="radio-button-label" for="google-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
+						</div>
+
+						<!--<p class="red-text mt-20">Данные аккаунт социальной сети уже привязан к другому аккаунту</p> -->
+
+					</div>
+
+				</div>
+
+				<hr>
+
+				<!--
+				<div class="notifications-block">
+
+					<p class="title">Настройка email уведомлений</p>
+
+					<p class="mt-10">Vsevn.ru вправе присылать системные уведомления пользователю бе</p>
+
+					<div class="notifications-settings">
+
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Платные услуги</p>
+								<p class="muddy-text">Изменения статусов подключенных услуг</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not1-y" name="not1" type="radio">
+									<label class="radio-button-label" for="not1-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not1-n" name="not1" type="radio">
+									<label class="radio-button-label" for="not1-n"></label>
+									<p>Нет</p>
 								</div>
 							</div>
 
-							<div class="solial-item">
+						</div>
 
-								<div class="line-content">
-									<img class="icon" src="images/dist/Facebook-v-Ukraine.png" alt="">
-									<p>Facebook</p>
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Персональные подборки</p>
+								<p class="muddy-text">Подборки интересующих объявлений и категорий</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not2-y" name="not2" type="radio">
+									<label class="radio-button-label" for="not2-y"></label>
+									<p>Да</p>
 								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="fb-y" name="fb" type="radio">
-										<label class="radio-button-label" for="fb-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input class="radio-button" id="fb-n" name="fb" type="radio">
-										<label class="radio-button-label" for="fb-n"></label>
-										<p>Нет</p>
-									</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not2-n" name="not2" type="radio">
+									<label class="radio-button-label" for="not2-n"></label>
+									<p>Нет</p>
 								</div>
 							</div>
 
-							<div class="solial-item">
+						</div>
 
-								<div class="line-content">
-									<img class="icon" src="images/dist/unnamed.png" alt="">
-									<p>Одноклассники</p>
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Сообщения</p>
+								<p class="muddy-text">Уведомления о новых сообщениях в мессенджере</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not3-y" name="not3" type="radio">
+									<label class="radio-button-label" for="not3-y"></label>
+									<p>Да</p>
 								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="od-y" name="od" type="radio">
-										<label class="radio-button-label" for="od-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="od-n" name="od" type="radio">
-										<label class="radio-button-label" for="od-n"></label>
-										<p>Нет</p>
-									</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not3-n" name="not3" type="radio">
+									<label class="radio-button-label" for="not3-n"></label>
+									<p>Нет</p>
 								</div>
 							</div>
 
-							<div class="solial-item">
+						</div>
 
-								<div class="line-content">
-									<img class="icon" src="images/dist/2000px-Google_Plus_logo_2015.svg_.png" alt="">
-									<p>Google +</p>
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Избранные компании</p>
+								<p class="muddy-text">Уведомления о новых объявлениях рекламодателях</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not4-y" name="not4" type="radio">
+									<label class="radio-button-label" for="not4-y"></label>
+									<p>Да</p>
 								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="google-y" name="google" type="radio">
-										<label class="radio-button-label" for="google-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="google-n" name="google" type="radio">
-										<label class="radio-button-label" for="google-n"></label>
-										<p>Нет</p>
-									</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not4-n" name="not4" type="radio">
+									<label class="radio-button-label" for="not4-n"></label>
+									<p>Нет</p>
 								</div>
 							</div>
 
-							<!--<p class="red-text mt-20">Данные аккаунт социальной сети уже привязан к другому аккаунту</p> -->
+						</div>
+
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Избранные соискатели</p>
+								<p class="muddy-text">Уведомления о новых объявлениях избранных соискателей</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not5-y" name="not5" type="radio">
+									<label class="radio-button-label" for="not5-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not5-n" name="not5" type="radio">
+									<label class="radio-button-label" for="not5-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Новости</p>
+								<p class="muddy-text">Информация о компании и новых функциях</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not6-y" name="not6" type="radio">
+									<label class="radio-button-label" for="not6-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not6-n" name="not6" type="radio">
+									<label class="radio-button-label" for="not6-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Советы от vsevn.ru</p>
+								<p class="muddy-text">Рекомендации по эффективной работе с сайтом</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not7-y" name="not7" type="radio">
+									<label class="radio-button-label" for="not7-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not7-n" name="not7" type="radio">
+									<label class="radio-button-label" for="not7-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="notification-item">
+
+							<div class="label-container">
+								<p>Платные услуги</p>
+								<p class="muddy-text">Изменения статусов подключенных услуг</p>
+							</div>
+
+							<div class="radio-container">
+								<div class="radio-wrapper">
+									<input class="radio-button" id="not8-y" name="not8" type="radio">
+									<label class="radio-button-label" for="not8-y"></label>
+									<p>Да</p>
+								</div>
+								<div class="radio-wrapper">
+									<input checked class="radio-button" id="not8-n" name="not8" type="radio">
+									<label class="radio-button-label" for="not8-n"></label>
+									<p>Нет</p>
+								</div>
+							</div>
 
 						</div>
 
 					</div>
 
-					<hr>
+				</div>
+				
+				<hr>
+				-->
 
-					<!--
-					<div class="notifications-block">
+				<div class="password-block">
 
-						<p class="title">Настройка email уведомлений</p>
-
-						<p class="mt-10">Vsevn.ru вправе присылать системные уведомления пользователю бе</p>
-
-						<div class="notifications-settings">
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Платные услуги</p>
-									<p class="muddy-text">Изменения статусов подключенных услуг</p>
-								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not1-y" name="not1" type="radio">
-										<label class="radio-button-label" for="not1-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not1-n" name="not1" type="radio">
-										<label class="radio-button-label" for="not1-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
+					<p class="title">Смена пароля</p>
+	
+					<p class="mt-10">Введите свой текущий пароль, новый пароль, и повторите ввод нов</p>
+	
+					<form class="mt-10" id="password-chenge">
+	
+						<div class="password-chenge-row">
+							<div class="left-item">
+								<p>Текущий пароль</p>
 							</div>
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Персональные подборки</p>
-									<p class="muddy-text">Подборки интересующих объявлений и категорий</p>
+							<div class="right-item">
+								<div class="input-wrapper">
+									<input type="password" name="password" id="password">
 								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not2-y" name="not2" type="radio">
-										<label class="radio-button-label" for="not2-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not2-n" name="not2" type="radio">
-										<label class="radio-button-label" for="not2-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Сообщения</p>
-									<p class="muddy-text">Уведомления о новых сообщениях в мессенджере</p>
-								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not3-y" name="not3" type="radio">
-										<label class="radio-button-label" for="not3-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not3-n" name="not3" type="radio">
-										<label class="radio-button-label" for="not3-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Избранные компании</p>
-									<p class="muddy-text">Уведомления о новых объявлениях рекламодателях</p>
-								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not4-y" name="not4" type="radio">
-										<label class="radio-button-label" for="not4-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not4-n" name="not4" type="radio">
-										<label class="radio-button-label" for="not4-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Избранные соискатели</p>
-									<p class="muddy-text">Уведомления о новых объявлениях избранных соискателей</p>
-								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not5-y" name="not5" type="radio">
-										<label class="radio-button-label" for="not5-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not5-n" name="not5" type="radio">
-										<label class="radio-button-label" for="not5-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Новости</p>
-									<p class="muddy-text">Информация о компании и новых функциях</p>
-								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not6-y" name="not6" type="radio">
-										<label class="radio-button-label" for="not6-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not6-n" name="not6" type="radio">
-										<label class="radio-button-label" for="not6-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Советы от vsevn.ru</p>
-									<p class="muddy-text">Рекомендации по эффективной работе с сайтом</p>
-								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not7-y" name="not7" type="radio">
-										<label class="radio-button-label" for="not7-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not7-n" name="not7" type="radio">
-										<label class="radio-button-label" for="not7-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="notification-item">
-
-								<div class="label-container">
-									<p>Платные услуги</p>
-									<p class="muddy-text">Изменения статусов подключенных услуг</p>
-								</div>
-
-								<div class="radio-container">
-									<div class="radio-wrapper">
-										<input class="radio-button" id="not8-y" name="not8" type="radio">
-										<label class="radio-button-label" for="not8-y"></label>
-										<p>Да</p>
-									</div>
-									<div class="radio-wrapper">
-										<input checked class="radio-button" id="not8-n" name="not8" type="radio">
-										<label class="radio-button-label" for="not8-n"></label>
-										<p>Нет</p>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-					
-					<hr>
-					-->
-
-					<div class="password-block">
-
-						<p class="title">Смена пароля</p>
-
-						<p class="mt-10">Введите свой текущий пароль, новый пароль, и повторите ввод нов</p>
-
-						<div class="mt-10" id="password-chenge">
-
-							<div class="password-chenge-row">
-								<div class="left-item">
-									<p>Текущий пароль</p>
-								</div>
-								<div class="right-item">
-									<div class="input-wrapper">
-										<input class="error-input" type="password" name="password" id="password">
-									</div>
-									<p class="red-text">Пароль неверный</p>
-								</div>
-								
-							</div>
-
-							<div class="password-chenge-row">
-								<div class="left-item">
-									<p>Новый пароль</p>
-								</div>
-								<div class="right-item">
-									<div class="input-wrapper">
-										<input type="password" name="new-password" id="new-password">
-									</div>
-								</div>
-							</div>
-
-							<div class="password-chenge-row">
-								<div class="left-item">
-									<p>Поторите Новый пароль</p>
-								</div>
-								<div class="right-item">
-									<div class="input-wrapper">
-										<input type="password" name="confirm-new-password" id="confirm-new-password">
-									</div>
-									
-									<p class="red-text">Пароль не совпадает</p>
-								</div>
-								
-							</div>
-
-							<div class="align-center-wrapper mt-20 mb-20">
-								<button class="btn-yelow" type="button">Сохранить</button>
+								<p class="red-text hide">Пароль неверный</p>
 							</div>
 							
-
+						</div>
+	
+						<div class="password-chenge-row">
+							<div class="left-item">
+								<p>Новый пароль</p>
+							</div>
+							<div class="right-item">
+								<div class="input-wrapper">
+									<input type="password" name="new_password" id="new-password">
+								</div>
+	
+								<p class="red-text hide">Поле не должно быть пустым</p>
+							</div>
+						</div>
+	
+						<div class="password-chenge-row">
+							<div class="left-item">
+								<p>Поторите Новый пароль</p>
+							</div>
+							<div class="right-item">
+								<div class="input-wrapper">
+									<input type="password" name="confirm_new_password" id="confirm-new-password">
+								</div>
+								
+								<p class="red-text hide">Пароль не совпадает</p>
+							</div>
+							
+						</div>
+	
+						<div class="align-center-wrapper mt-20 mb-20">
+							<button class="btn-yelow" type="submit">Сохранить</button>
 						</div>
 						
-					</div>
-
-				</form>
+	
+					</form>
+					
+				</div>
 
 			</div>
 

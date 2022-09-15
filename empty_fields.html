@@ -1,0 +1,1224 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>vsevn</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+<header></header>
+
+<div class="modal-window hide" id="date">
+
+    <div class="modal-container">
+
+        <div class="modal-wrapper">
+
+            <a href="#" class="icon close">
+                <img src="images/dist/close.svg" alt="">
+            </a>
+
+            <p class="center-text">Выберите дату рождения</p>
+
+            <div class="row-space-between mt-30">
+                <input id="day" placeholder="Код для подтверждения" type="text">
+                <input disabled id="month" placeholder="Код для подтверждения" type="text">
+                <input id="year" placeholder="Код для подтверждения" type="text">
+            </div>
+            
+            <div class="btn-row mt-30">
+                <a href="" class="btn-red">Отмена</a>
+                <a href="" class="btn-yelow-no-hover">Подтвердить</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal-window confirm-phone hide" id="confirm-phone">
+
+    <div class="modal-container">
+
+        <div class="modal-wrapper">
+
+            <a href="#" class="icon close">
+                <img src="images/dist/close.svg" alt="">
+            </a>
+
+            <p class="center-text">На телефон +7-ХХХ-ХХХ-ХХ выслано подтверждение с кодом</p>
+
+            <input placeholder="Код для подтверждения" class="mt-30" type="text">
+            
+            <div class="btn-row mt-30">
+                <a href="" class="btn-red">Отмена</a>
+                <a href="" class="btn-yelow-no-hover">Подтвердить</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal-window hide" id="address-window">
+
+    <div class="modal-container">
+
+        <form class="modal-wrapper">
+
+            <a href="#" class="icon close">
+                <img src="images/dist/close.svg" alt="">
+            </a>
+
+            <p class="center-text">Адрес</p>
+            
+            <div class="input-wrapper mt-15">
+                <input class="custom-input" id="cod8" type="text">
+                <label for="cod8" class="placeholder">Регион/населеный пункт</label>
+            </div>
+
+            <div class="input-wrapper mt-15">
+                <input class="custom-input" id="cod9" type="text">
+                <label for="cod9" class="placeholder">Улица</label>
+            </div>
+
+            <div class="input-wrapper mt-15">
+                <input class="custom-input" id="cod10" type="text">
+                <label for="cod10" class="placeholder">Дом</label>
+            </div>
+
+            <div class="input-wrapper mt-15">
+                <input class="custom-input" id="cod11" type="text">
+                <label for="cod11" class="placeholder">Корпус/строение</label>
+            </div>
+
+            <div class="input-wrapper mt-15">
+                <input class="custom-input" id="cod12" type="text">
+                <label for="cod12" class="placeholder">Номер помещения</label>
+            </div>
+
+            <div class="input-wrapper mt-15">
+                <input class="custom-input" id="cod13" type="text">
+                <label for="cod13" class="placeholder">Район</label>
+            </div>
+
+            <div class="input-wrapper mt-15">
+                <input class="custom-input" id="cod14" type="text">
+                <label for="cod14" class="placeholder">Индекс</label>
+            </div>
+            
+            <div class="btn-row mt-30">
+                <a href="" class="btn-red">Отмена</a>
+                <a href="" class="btn-yelow-no-hover">Подтвердить</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="modal-window delete-phone hide" id="delete-phone">
+
+    <div class="modal-container">
+
+        <div class="modal-wrapper">
+
+            <a href="#" class="icon close">
+                <img src="images/dist/close.svg" alt="">
+            </a>
+
+            <p class="center-text">Вы действительно хотите удалить телефон ?</p>
+            
+            <div class="btn-row mt-30">
+                <a href="" class="btn-red">Отмена</a>
+                <a href="" class="btn-yelow-no-hover">Подтвердить</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal-window delete-email-window hide" id="delete-email-window">
+
+    <div class="modal-container">
+
+        <div class="modal-wrapper">
+
+            <a href="#" class="icon close">
+                <img src="images/dist/close.svg" alt="">
+            </a>
+
+            <p class="center-text">Вы действительно хотите удалить email ?</p>
+            
+            <div class="btn-row mt-30">
+                <a href="" class="btn-red">Отмена</a>
+                <a href="" class="btn-yelow-no-hover">Подтвердить</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal-window img-modal-window hide" id="img-modal-window">
+    <div class="modal-container">
+
+        <div class="modal-img-wrapper">
+
+            <a class="icon close">
+                <img src="images/dist/close.svg" alt="">
+            </a>
+
+            <div class="img-container">
+                <img src="images/dist/photo1.png" alt="">
+            </div>
+            
+
+        </div>
+
+    </div>
+</div>
+
+<main class="settings-main">
+
+    <div class="nav-container">
+        <h2>Настройки</h2>
+
+        <nav class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Настройки</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="settings-content">
+
+        <div class="settings-top-block">
+
+            <div class="mail-block">
+                <form action="">
+                    <input type="text" value="111nat@mail.ru">
+                </form>
+                <a href="#" class="confirmation">Выслать сылку на подтверждение</a>
+            </div>	
+            
+            <p class="user-number mt-20">Компания, номер пользователя - 32553534</p>
+
+            <div class="wallet">
+                <p class="wallet-item">
+                    <img src="images/dist/Shape 1.png" alt="">
+                    <span>12573 ₽</span>
+                </p>
+                <p class="wallet-item">
+                    <img src="images/dist/russia-ruble.png" alt="">
+                    <span>12573 ₽</span>
+                </p>
+                <a href="#" class="wallet-item">Пополнить кошелек</a>
+            </div>
+            
+        </div>
+
+        <hr>
+
+        <div class="ads-list-container">
+
+            <div class="ads-list-wrapper">
+
+                <p>Обьявлений в резюме</p>
+
+                <div class="ads-list-status">
+
+                    <p>2(<a href="#">Активно</a>)</p>
+
+                    <p>2(<a href="#">Завершены</a>)</p>
+
+                </div>
+
+            </div>
+
+            <div class="ads-list-wrapper">
+
+                <p>Обьявлений Вакансии</p>
+
+                <div class="ads-list-status">
+
+                    <p>2(<a href="#">Активно</a>)</p>
+
+                    <p>2(<a href="#">Завершены</a>)</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <hr>
+        
+        <div class="contact-info">
+
+            <div class="contact-info-content">
+
+                <div class="column-lable">
+                    <span>E-mail-ы</span>
+                </div>
+
+                <div class="column-content">
+
+                    <div class="content-row">
+                        <div class="item-row">
+                            <p class="error-message-top">
+                                <span class="error-message-top-content">очень_длинный_пример@mail.ru</span>
+                                <a class="delete icon">
+                                    <img src="images/dist/Forma 1 копия 15.png" alt="">
+                                </a>
+                            </p>
+                            <div class="input-wrapper">
+                                <form action="valid_email">
+                                    <input data-email-pattern id="email" type="text" placeholder="Email" value="очень_длинный_пример@mail.ru">
+                                </form>
+                            </div>
+                            <p class="red-text mt-10 hide">Не верный формат</p>
+                        </div>
+                        <div class="item-row">
+                            <p class="email-confirmationed"><img class="icon" src="images/dist/draw-check-mark копия 4.png" alt=""> Подтвержден</p>
+                        </div>
+                        <div class="item-row">
+                            <a href="#">1 обьявление</a>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="item-row">
+                            <p>
+                                <span class="email">пример@mail.ru</span>
+                                <a class="edit-email icon">
+                                    <img src="images/dist/pencil-edit-button копия 6.png" alt="">
+                                </a>
+                                <a class="delete-email icon">
+                                    <img src="images/dist/Forma 1 копия 15.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="item-row">
+                            <a class="email-confirmation">Подтвердить</a>
+                        </div>
+                        <div class="item-row">
+                            <a href="#">2 подписки на "вакансии"</a>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="item-row">
+                            <p>
+                                <span class="email">пример@mail.ru</span>
+                                <a class="edit-email icon">
+                                    <img src="images/dist/pencil-edit-button копия 6.png" alt="">
+                                </a>
+                                <a class="delete-email icon">
+                                    <img src="images/dist/Forma 1 копия 15.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="item-row">
+                            <p class="email-confirmationed"><img class="icon" src="images/dist/draw-check-mark копия 4.png" alt=""> Подтвержден</p>
+                        </div>
+                        <div class="item-row">
+                            <a href="#">2 подписки на "вакансии"</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <div class="contact-info-content">
+
+                <div class="column-lable mt-8">
+                    <span>Телефоны</span>
+                </div>
+
+                <div class="column-content">
+                    
+                    <div class="content-row">
+                        <div class="item-row">
+                            <div class="input-wrapper">
+                                <form action="">
+                                    <input data-phone-pattern id="phone" type="text" placeholder="Телефон" value="очень_длинный_пример@mail.ru">
+                                </form>
+                            </div>
+                            <p class="red-text mt-10 hide">Не верный формат</p>
+                        </div>
+                        <div class="item-row">
+                            <a class="chenge-phone">Изменить</a>
+
+                            <div class="phone-chenge-error-popup hide">
+                                <img class="icon" src="images/dist/stop.png" alt="">
+                                <p>Нельзя повторно добавлять уже привязанный номер телефона</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="item-row">
+                            <p>
+                                <span class="telephone">+7 952 777 - 00 - 01</span>
+                                <a class="edit-telephone icon">
+                                    <img src="images/dist/pencil-edit-button копия 6.png" alt="">
+                                </a>
+                                <a class="delete-telephone icon">
+                                    <img src="images/dist/Forma 1 копия 15.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="item-row">
+                            <p class="email-confirmationed"><img class="icon" src="images/dist/draw-check-mark копия 4.png" alt=""> Подтвержден</p>
+                        </div>
+                        <div class="item-row">
+                            <p>Нет обьявлений</p>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="item-row">
+                            <p>
+                                <span class="telephone">+7 952 777 - 00 - 01</span>
+                                <a class="edit-telephone icon">
+                                    <img src="images/dist/pencil-edit-button копия 6.png" alt="">
+                                </a>
+                                <a class="delete-telephone icon">
+                                    <img src="images/dist/Forma 1 копия 15.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="item-row">
+                            <p class="email-confirmationed"><img class="icon" src="images/dist/draw-check-mark копия 4.png" alt=""> Подтвержден</p>
+                        </div>
+                        <div class="item-row">
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="item-row">
+                            <p>
+                                <span class="telephone">+7 952 777 - 00 - 01</span>
+                                <a class="edit-telephone icon" class="icon">
+                                    <img src="images/dist/pencil-edit-button копия 6.png" alt="">
+                                </a>
+                                <a class="delete-telephone icon" href="#" class="icon">
+                                    <img src="images/dist/Forma 1 копия 15.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="item-row">
+                            <p class="email-confirmationed"></p>
+                        </div>
+                        <div class="item-row">
+                            <p>Нет обьявлений</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="contact-info">
+
+            <h4 class="contact-info-title">Контактная информация</h4>
+
+            <form id="main-form">
+
+                <div class="contact-info-wrapper">
+
+                    <div class="left-block">
+
+                        <p>Фотография к резюме</p>
+
+                        <a href="#" class="btn-yelow mt-20">Добавить фото</a>
+
+                        <div class="images-wrapper">
+
+                            <div class="photo-container">
+                                <div class="circle-img-item">
+                                    <!-- <img src="images/dist/photo1.png" alt=""> -->
+                                    <p>FOTO</p>
+                                </div>
+                            </div>
+
+                            <div class="main-photo-container">
+                                <div class="circle-img-main">
+
+                                    <!-- <img class="circle-img expended-img" src="images/dist/photo1.png" alt=""> -->
+                                    <p>FOTO</p>
+
+                                </div>
+
+                                <!-- <div class="action-container">
+                                    <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                    <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                    <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                </div> -->
+                            </div>
+
+                        </div>
+
+                        <p class="title mt-10">Информация о соискателе</p>
+
+                        <p class="mt-10">Информация будет использоваться для заполнения полей на странице публикация обьявлений резюме. <a href="#">Чем отличаются Объявления "Резюме" от "Резюме"?</a></p>
+
+                        <div class="row-container mt-10">
+                            <div class="input-wrapper">
+                                <input data-name-pattern class="custom-input" name="full_name" id="full-name" type="text">
+                                <label for="full-name" class="placeholder">Фамилия Имя Отчество</label>
+                            </div>
+                        </div>
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input disabled class="custom-input" name="full_name" id="beath-day" type="text">
+                                <label for="beath-day" class="placeholder">Дата рождения</label>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM192 304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208C199.2 256 192 263.2 192 272V304zM336 256C327.2 256 320 263.2 320 272V304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336zM64 432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80C71.16 384 64 391.2 64 400V432zM208 384C199.2 384 192 391.2 192 400V432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208zM320 432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336C327.2 384 320 391.2 320 400V432z"/></svg>
+                            </div>
+                        </div>
+                        <div class="row-container">
+                            <div class="select-wrapper">
+                                <input disabled class="custom-input select-input" name="select-education" id="select-education" type="text">
+                                <label for="select-education" class="placeholder">Образование</label>
+                                <svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                <ul class="select-list hide">
+                                    <li><span></span><a>Высшее</a></li>
+                                    <li class="active"><span></span><a>Среднее специальное</a></li>
+                                    <li><span></span><a>Средние</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="select-wrapper">
+                                <input disabled class="custom-input select-input" name="select-family-status" id="select-family-status" type="text">
+                                <label for="select-family-status" class="placeholder">Семейное положение</label>
+                                <svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                <ul class="select-list hide">
+                                    <li><span></span><a>Замужем</a></li>
+                                    <li><span></span><a>В разводе</a></li>
+                                    <li><span></span><a>Не замужем</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="column-wrapper">
+                            <div class="row-space-between">
+                                <div class="left-reverse-item">
+                                    <div class="select-wrapper">
+                                        <input disabled class="custom-input select-input select-leng" name="select-leng" id="select-leng" type="text">
+                                        <label for="select-leng" class="placeholder">Знание языка (ов)</label>
+                                        <svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                        <ul class="select-list hide">
+                                            <li><span></span><a>Английский</a></li>
+                                            <li><span></span><a>Немецкий</a></li>
+                                            <li><span></span><a>Китайский</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="right-reverse-item">
+                                    <p><a class="add-new-element add-new-leng">Добавить язык</a></p>
+                                </div>
+                            </div>
+
+                            <p class="muddy-text mt-10">Укажите уровень знания языка</p>
+
+                            <div class="row-space-between">
+                                <div class="row-item">
+                                    <input checked name="img" class="radio-button" id="img-1" type="radio">
+									<label class="radio-button-label" for="img-1"></label>
+                                    <span>Начальный</span>
+                                </div>
+                                <div class="row-item">
+                                    <input checked name="img" class="radio-button" id="img-2" type="radio">
+									<label class="radio-button-label" for="img-2"></label>
+                                    <span>Средний</span>
+                                </div>
+                                <div class="row-item">
+                                    <input checked name="img" class="radio-button" id="img-3" type="radio">
+									<label class="radio-button-label" for="img-3"></label>
+                                    <span>Свободное владение</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row-space-between mt-20">
+                            <div class="left-reverse-item">
+                                <div class="input-wrapper">
+                                    <input disabled class="custom-input" name="select-family-status" id="work-exp" type="text">
+                                    <label for="work-exp" class="placeholder">Место работы</label>
+                                </div>
+                            </div>
+                            
+                            <div class="right-reverse-item">
+                                <p><a class="add-new-element">Добавить место работы</a></p>
+                            </div>
+                        </div>
+
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input class="custom-input" type="text" id="user-email">
+                                <label for="user-email" class="placeholder">E-mail</label>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input data-phone-pattern class="custom-input" type="text" id="user-phone">
+                                <label for="user-phone" class="placeholder">Телефон</label>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input disabled class="custom-input" type="text" id="user-address">
+                                <label for="user-address" class="placeholder">Адрес проживания</label>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="select-wrapper">
+                                <input disabled class="custom-input select-input" name="user-citizenship" id="user-citizenship" type="text">
+                                <label for="user-citizenship" class="placeholder">Гражданство</label>
+                                <svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                <ul class="select-list hide">
+                                    <li><span></span><a>Селект1</a></li>
+                                    <li><span></span><a>Селект2</a></li>
+                                    <li><span></span><a>Селект3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="textarea-wrapper">
+                                <textarea class="textarea" type="text" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about" id="about"></textarea>
+                                <p class="textarea-error-message hide">Заполните поле не менее чем на 250 символов</p>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input data-no-validation-input class="custom-input" type="text" id="tag-create">
+                                <label for="tag-create" class="placeholder">Ключевые навыки</label>
+                            </div>
+                            <div class="search-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+                            </div>
+                            <div class="create-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+                            </div>
+                        </div>
+
+                        <div class="tags-wrapper mt-20">
+
+                            <div class="tag">
+                                <a href="#">Adobe Illustrator</a>
+                                <p class="icon"><img src="images/dist/Forma 1.png" alt=""></p>
+                            </div>
+                            <div class="tag">
+                                <a href="#">Adobe Photoshop</a>
+                                <p class="icon"><img src="images/dist/Forma 1.png" alt=""></p>
+                            </div>
+                            <div class="tag">
+                                <a href="#">CorelDRAW</a>
+                                <p class="icon"><img src="images/dist/Forma 1.png" alt=""></p>
+                            </div>
+                            <div class="tag">
+                                <a href="#">Опыт работы в CorelDRAW. Знание CorelDRAW в совершенстве </a>
+                                <p class="icon"><img src="images/dist/Forma 1.png" alt=""></p>
+                                <p class="prompt">
+                                    Опыт работы в CorelDRAW. Знание CorelDRAW в совершенстве
+                                </p>
+                            </div>
+                            <div class="tag">
+                                <a href="#">CorelDRAW</a>
+                                <p class="icon"><img src="images/dist/Forma 1.png" alt=""></p>
+                            </div>
+
+                        </div>
+                        
+        
+                    </div>
+        
+                    <div class="right-block">
+        
+                        <p>Логотип</p>
+
+                        <a href="#" class="btn-yelow mt-20">Добавить фото</a>
+
+                        <div class="images-wrapper">
+
+                            <div class="photo-container">
+                                <div class="item-img-square">
+                                    <!-- <img src="images/dist/photo1.png" alt=""> -->
+                                    <p>LOGO</p>
+                                </div>
+                            </div>
+
+                            <div class="main-photo-container">
+                                <div class="img-square-main">
+                                    <!-- <img class="img-square expended-img" class="" src="images/dist/photo1.png" alt=""> -->
+                                    <p>LOGO</p>
+                                </div>
+
+                                <!-- <div class="action-container">
+                                    <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                    <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                    <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                </div> -->
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="title mt-10">Реквизиты и описание компании</p>
+
+                        <p class="mt-10">Реквизиты будут использоваться для оформления счетов и других финансовых документов. Пожалуйста, указывыйте корректные данные. <a href="#" class="qa-link">Как изменить реквизиты?</a></p>
+
+                        <div class="row-container">
+                            <div class="select-wrapper">
+                                <input disabled class="custom-input select-input" name="opf" id="opf" type="text">
+                                <label for="opf" class="placeholder">Юридическая форма</label>
+                                <svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                <ul class="select-list hide">
+                                    <li><span></span><a>ООО</a></li>
+                                    <li><span></span><a>ААА</a></li>
+                                    <li><span></span><a>Селект 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input class="custom-input" type="text" id="company-name">
+                                <label for="company-name" class="placeholder">Компания и ее название</label>
+                                <a class="prompt auto-fill"><span class="prompt-item"></span></a>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input class="custom-input" type="number" id="inn">
+                                <label for="inn" class="placeholder">ИНН</label>
+                                <a class="prompt auto-fill"><span></span></a>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input class="custom-input" type="number" id="kpp">
+                                <label for="kpp" class="placeholder">КПП</label>
+                                <a class="prompt auto-fill"><span></span></a>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input disabled class="custom-input" id="address" type="text">
+                                <label for="address" class="placeholder">Юридический адрес</label>
+                            </div>
+                        </div>
+                        
+                        <p class="muddy-text mt-10">Полный пдрес компании, включая почтовый индекс и город</p>
+
+
+                        <div class="check-box-wrapper mt-10">
+                            <div class="align-center-wrapper">
+                                <input class="checkbox" id="chek" type="checkbox">
+                                <label class="label-checkbox" for="chek"></label>
+                            </div>
+                            <span>Совпадает с юридическим адресом</span>
+                        </div>
+                    
+
+                        <div class="row-container mt-20">
+                            <div class="input-wrapper">
+                                <input disabled class="custom-input" id="company-mail-address" type="text">
+                                <label for="company-mail-address" class="placeholder">Почтовый адрес</label>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input disabled class="custom-input" id="company-create-date" type="text">
+                                <label for="company-create-date" class="placeholder">Дата создания компании</label>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM192 304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208C199.2 256 192 263.2 192 272V304zM336 256C327.2 256 320 263.2 320 272V304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336zM64 432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80C71.16 384 64 391.2 64 400V432zM208 384C199.2 384 192 391.2 192 400V432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208zM320 432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336C327.2 384 320 391.2 320 400V432z"/></svg>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="select-wrapper">
+                                <input disabled class="custom-input select-input" name="number" id="company-headcount" type="text">
+                                <label for="company-headcount" class="placeholder">Численность компании</label>
+                                <svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                <ul class="select-list hide">
+                                    <li><span></span><a>Селект 1</a></li>
+                                    <li><span></span><a>Селект 2</a></li>
+                                    <li><span></span><a>Селект 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row-space-between">
+                            <div class="left-reverse-item">
+                                <div class="input-wrapper">
+                                    <input data-phone-pattern class="custom-input company-phone" type="text" id="company-phone">
+                                    <label for="company-phone" class="placeholder">Телефон</label>
+                                </div>
+                            </div>
+                            
+                            <div class="right-reverse-item">
+                                <p><a id="add-company-phone" class="add-new-element">Добавить Телефон</a></p>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input class="custom-input" type="text" id="company-url">
+                                <label for="company-url" class="placeholder">url</label>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="textarea-wrapper">
+                                <textarea class="textarea" type="text" class="mt-8" placeholder="Пример описания о себе, Пример описания о себе ,Пример описания" name="about-company" id="about-company"></textarea>
+                                <p class="textarea-error-message hide">Заполните поле не менее чем на 250 символов</p>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="select-wrapper">
+                                <input disabled class="custom-input select-input" name="activity" id="activity" type="text">
+                                <label for="activity" class="placeholder">Сфера деительности</label>
+                                <svg class="angle-down hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg><svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                <ul class="select-list hide">
+                                    <li><span></span><a>Селект 1</a></li>
+                                    <li><span></span><a>Селект 2</a></li>
+                                    <li><span></span><a>Селект 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input data-name-pattern class="custom-input" type="text" id="hr">
+                                <label for="hr" class="placeholder">ФИО ответственного за подбор персонала</label>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input data-phone-pattern class="custom-input" type="text" id="hr-phone">
+                                <label for="hr-phone" class="placeholder">Телефон ответственного за подбор персонала</label>
+                            </div>
+                        </div>
+
+                        <div class="row-container">
+                            <div class="input-wrapper">
+                                <input data-email-pattern class="custom-input" type="text" id="hr-email">
+                                <label for="hr-email" class="placeholder">E-mail ответственного за подбор персонала</label>
+                            </div>
+                        </div>
+
+
+                        <div class="company-photo-container">
+                            <p class="title">Фото предприятия, компании</p>
+
+                            <div class="photo-select-wrapper">
+
+                                <div class="photo-select-item">
+                                    <div class="img-container">
+                                        <img src="images/dist/photo2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="photo-select-item">
+                                    <div class="img-container">
+                                        <img src="images/dist/photo2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="photo-select-item">
+                                    <div class="img-container">
+                                        <img src="images/dist/photo2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="photo-select-item">
+                                    <div class="img-container">
+                                        <img src="images/dist/photo2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="photo-select-item">
+                                    <div class="img-container">
+                                        <img src="images/dist/photo2.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="mt-10 center-text">Выберите главное изображение для превью</p>
+
+                            <div class="upload-wrapper mt-20">
+                                <a href="#" class="upload-company-media">
+                                    <img src="images/dist/add.png" alt="">
+                                </a>
+                            </div>
+
+                            <p class="mt-30 title">Фото (превью) для главной о предприятии, о компании</p>
+
+                            <div class="preview-photo-wrapper">
+
+                                <div class="preview-photo-company">
+
+                                    <div class="img-container">
+                                        <img src="images/dist/photo3.png" alt="">
+                                    </div>
+                                    
+                                    <div class="action-container">
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <p class="title mt-30">Видео о предприятии, о компании</p>
+
+                            <div class="video-company-wrapper">
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="video-company-item">
+                                    <a class="video-company img-container" href="#">
+                                        <img src="images/dist/photo2.png" alt="">
+                                        
+                                    </a>
+        
+                                    <div class="action-container">
+                                        <a class="icon expand"><img src="images/dist/expand-arrows.png" alt=""></a>
+                                        <a class="icon"><img src="images/dist/pencil-edit-button копия 6.png" alt=""></a>
+                                        <a class="icon clean-input"><img src="images/dist/Forma 1 копия 15.png" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <div class="upload-wrapper mt-20">
+                                    <a href="#" class="upload-company-media">
+                                        <img src="images/dist/add.png" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+        
+                    </div>
+
+                </div>
+
+                <div class="align-center-wrapper mt-20">
+                    <button type="submit" class="btn-yelow" id="save-settings">Сохранить</button>
+                </div>
+                
+            </form>
+
+            <hr>
+
+        
+
+            <div class="solial-block">
+
+                <p class="title">Социальные сети</p>
+
+                <p class="mt-8">Заходите на сайт через аккаунты в социальных сетях</p>
+
+                <form class="socials-wrapper">
+
+                    <div class="solial-item">
+
+                        <div class="line-content">
+                            <img class="icon" src="images/dist/vk.png" alt="">
+                            <p>Вконтакте</p>
+                        </div>
+
+                        <div class="radio-container">
+                            <div class="radio-wrapper">
+                                <input class="radio-button" id="vk-y" name="vk" type="radio">
+                                <label class="radio-button-label" for="vk-y"></label>
+                                <p>Да</p>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input checked class="radio-button" id="vk-n" name="vk" type="radio">
+                                <label class="radio-button-label" for="vk-n"></label>
+                                <p>Нет</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solial-item">
+
+                        <div class="line-content">
+                            <img class="icon" src="images/dist/Facebook-v-Ukraine.png" alt="">
+                            <p>Facebook</p>
+                        </div>
+
+                        <div class="radio-container">
+                            <div class="radio-wrapper">
+                                <input checked class="radio-button" id="fb-y" name="fb" type="radio">
+                                <label class="radio-button-label" for="fb-y"></label>
+                                <p>Да</p>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input class="radio-button" id="fb-n" name="fb" type="radio">
+                                <label class="radio-button-label" for="fb-n"></label>
+                                <p>Нет</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solial-item">
+
+                        <div class="line-content">
+                            <img class="icon" src="images/dist/unnamed.png" alt="">
+                            <p>Одноклассники</p>
+                        </div>
+
+                        <div class="radio-container">
+                            <div class="radio-wrapper">
+                                <input class="radio-button" id="od-y" name="od" type="radio">
+                                <label class="radio-button-label" for="od-y"></label>
+                                <p>Да</p>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input checked class="radio-button" id="od-n" name="od" type="radio">
+                                <label class="radio-button-label" for="od-n"></label>
+                                <p>Нет</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solial-item">
+
+                        <div class="line-content">
+                            <img class="icon" src="images/dist/2000px-Google_Plus_logo_2015.svg_.png" alt="">
+                            <p>Google +</p>
+                        </div>
+
+                        <div class="radio-container">
+                            <div class="radio-wrapper">
+                                <input class="radio-button" id="google-y" name="google" type="radio">
+                                <label class="radio-button-label" for="google-y"></label>
+                                <p>Да</p>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input checked class="radio-button" id="google-n" name="google" type="radio">
+                                <label class="radio-button-label" for="google-n"></label>
+                                <p>Нет</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <hr>
+
+            <div class="password-block">
+
+                <p class="title">Смена пароля</p>
+
+                <p class="mt-10">Введите свой текущий пароль, новый пароль, и повторите ввод нов</p>
+
+                <form class="mt-10" id="password-chenge">
+
+                    <div class="password-chenge-row">
+                        <div class="left-item">
+                            <p>Текущий пароль</p>
+                        </div>
+                        <div class="right-item">
+                            <div class="input-wrapper">
+                                <input type="password" name="password" id="password">
+                            </div>
+                            <p class="red-text hide">Пароль неверный</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="password-chenge-row">
+                        <div class="left-item">
+                            <p>Новый пароль</p>
+                        </div>
+                        <div class="right-item">
+                            <div class="input-wrapper">
+                                <input type="password" name="new_password" id="new-password">
+                            </div>
+
+                            <p class="red-text hide">Поле не должно быть пустым</p>
+                        </div>
+                    </div>
+
+                    <div class="password-chenge-row">
+                        <div class="left-item">
+                            <p>Поторите Новый пароль</p>
+                        </div>
+                        <div class="right-item">
+                            <div class="input-wrapper">
+                                <input type="password" name="confirm_new_password" id="confirm-new-password">
+                            </div>
+                            
+                            <p class="red-text hide">Пароль не совпадает</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="align-center-wrapper mt-20 mb-20">
+                        <button class="btn-yelow" type="submit">Сохранить</button>
+                    </div>
+                    
+
+                </form>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
